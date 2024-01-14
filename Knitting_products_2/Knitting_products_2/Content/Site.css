@@ -1,0 +1,76 @@
+﻿
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+
+img#hamburger {
+    display: none;
+}
+
+@media(max-width:990px) {
+    .body-content {
+        margin-top: 100px;
+    }
+    img#hamburger {
+        display: block;
+    }
+
+    .navbar .container-fluid {
+        display:none;
+    }
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+ul li {
+    font-size: 30px;
+    list-style-type: none;
+}
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.item {
+    border: solid 2px green;
+}
+
+    .item button {
+        height: 60px;
+    }
+
+.jumbotron {
+    background-color: rgba(206,152,250,0.26);
+}
+
+
+.jumbotron h1 {
+    color: #6643b5;
+    font-family: Brush Script MT;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron img {
+    float:right;
+}

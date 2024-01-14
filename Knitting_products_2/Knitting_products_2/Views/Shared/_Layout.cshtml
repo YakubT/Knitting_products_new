@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - В'язані вироби</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <img src="~/Img/utility/hamurger_menu.png" id="hamburger" width="150" height="100" />
+        <div class="container-fluid">
+            <ul class="row">
+                <li class="col-lg-4 col-md-4 col-sm-12 text-center">@Html.ActionLink("Головна", "Index", "Home")</li>
+                <li class="col-lg-4 col-md-4 col-sm-12 text-center">@Html.ActionLink("Каталог", "About", "Home")</li>
+                <li class="col-lg-4 col-md-4 col-sm-12 text-center">@Html.ActionLink("Кошик", "Contact", "Home")</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - В'язані вироби</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/lay")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
