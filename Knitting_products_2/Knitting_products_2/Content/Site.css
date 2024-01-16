@@ -16,14 +16,16 @@ img#hamburger {
     .body-content {
         margin-top: 100px;
     }
+
     img#hamburger {
         display: block;
     }
 
     .navbar .container-fluid {
-        display:none;
+        display: none;
     }
 }
+
 
 .body-content {
     padding-left: 15px;
@@ -38,8 +40,19 @@ img#hamburger {
 }
 
 ul li {
+    border: solid 1px white;
     font-size: 30px;
     list-style-type: none;
+}
+
+    ul li:hover {
+        background-color: gray;
+    }
+
+li > a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none !important;
 }
 
 
@@ -64,13 +77,18 @@ textarea {
 }
 
 
-.jumbotron h1 {
-    color: #6643b5;
-    font-family: Brush Script MT;
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    .jumbotron h1 {
+        color: #6643b5;
+        font-family: Brush Script MT;
+        font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 
-.jumbotron img {
-    float:right;
+    .jumbotron img {
+        float: right;
+    }
+
+ul.row {
+    margin: 0;
+    padding: 0;
 }
